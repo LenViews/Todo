@@ -71,7 +71,7 @@ int main() {
     glfwWindowHint(GLFW_TRANSPARENT_FRAMEBUFFER, GLFW_TRUE);
 
     // Create a Window
-    GLFWwindow* window = glfwCreateWindow(800, 600, "Transparent Background with Blur", NULL, NULL);
+    GLFWwindow* window = glfwCreateWindow(800, 600, "Lens View", NULL, NULL);
     if (!window) {
         fprintf(stderr, "Failed to create GLFW window\n");
         glfwTerminate();
@@ -159,7 +159,7 @@ int main() {
         glClearColor(0.0f, 0.0f, 0.0f, 0.5f);  // Transparent background
         glClear(GL_COLOR_BUFFER_BIT);
 
-        // Render your scene here (add your content if necessary)
+        // Render scene here (add content)
 
         // Switch to screen rendering
         glBindFramebuffer(GL_FRAMEBUFFER, 0);
